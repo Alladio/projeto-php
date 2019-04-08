@@ -25,6 +25,10 @@ class Controller extends BaseController
     }]);*/
     }
 
+    public function fazerLogin(){
+
+      return view('user.login');
+    }
     public function listar(){
 
       /*return('welcome', [{

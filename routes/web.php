@@ -12,8 +12,13 @@
 */
 
 Route::get('/', ['uses' => 'Controller@homepage']);
+
 Route::get('/cadastrar', ['uses' => 'Controller@cadastrar']);
 Route::get('/listar', ['uses' => 'Controller@listar']);
+
+
+//Login
+Route::get('/login', ['uses' => 'Controller@fazerLogin']);
 
 /*
 Route::get('/', function () {

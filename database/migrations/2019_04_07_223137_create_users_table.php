@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->increments('id');
 
 						$table->string('cpf',11)->unique();//nullable()
-						$table->string('0',50);
+						$table->string('name',50);
 						$table->char('phone',11);
 						$table->date('birth');
 						$table->char('gender',1);
@@ -48,7 +48,7 @@ class CreateUsersTable extends Migration
 	 */
 	public function down()
 	{
-		Schema::create('users', function(Blueprint $table) {
+		Schema::table('users', function(Blueprint $table) {
 		});
 		Schema::drop('users');
 	}
