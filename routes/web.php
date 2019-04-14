@@ -19,7 +19,7 @@ Route::get('/listar', ['uses' => 'Controller@listar']);
 
 //Login
 Route::get('/login', ['uses' => 'Controller@fazerLogin']);
-Route::post('/login', ['as' =>'user.login','uses' => 'Controller@fazerLogin']);
+Route::post('/login', ['as' =>'user.login','uses' => 'DashBoardController@auth']);
 
 /*
 Route::get('/', function () {
