@@ -68,7 +68,8 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\User::class,
+            //Atualização do caminho
+            'model' => App\Entities\User::class,
         ],
 
         // 'users' => [

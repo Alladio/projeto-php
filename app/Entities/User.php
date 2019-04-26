@@ -40,4 +40,10 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    public function setPasswordAttribute($value)
+    {
+      $this->password;
+      $this->attributes['password'] = env('PASSWORD_HASH') ? bcrypt($value) : $value;
+    }
+
 }
